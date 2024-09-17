@@ -1,0 +1,33 @@
+header {
+  background-color: var(--background-secondary-color);
+  height: 80px;
+  width: 100%;
+  /* border-radius: 0 0 22px 22px; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+.section-logo-navbar {
+  display: flex;
+}
+
+.icon-menu-navbar {
+  display: flex;
+}
+
+.image-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.icons-section-navbar {
+  display: flex;
+  gap: 1rem;
+}
