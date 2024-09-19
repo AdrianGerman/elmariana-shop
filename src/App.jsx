@@ -1,13 +1,12 @@
 import "./App.css"
 import HeaderMenu from "./components/HeaderMenu"
+import HomeComponent from "./components/HomeComponent"
 
 function App() {
   return (
     <>
       <HeaderMenu />
-      <div className="main">
-        <h1>Hola, ojala explotes.</h1>
-      </div>
+      <HomeComponent />
     </>
   )
 }
