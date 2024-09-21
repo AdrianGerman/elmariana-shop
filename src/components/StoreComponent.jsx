@@ -2,12 +2,45 @@ import "./StoreComponent.css"
 
 const StoreComponent = () => {
   return (
-    <>
-      <div className="store-section">
-        <h1>Welcome to my store</h1>
-        {/* aqui va el contenido de la store */}
-      </div>
-    </>
+    <div className="products">
+      <ul className="store-section">
+        <li>
+          <img src="/product_bg.webp" alt="" />
+          <div className="card-information">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>$ 7,777 MXN</p>
+          </div>
+        </li>
+        <li>
+          <img src="/product_bg.webp" alt="" />
+          <div className="card-information">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>$ 7,777 MXN</p>
+          </div>
+        </li>
+        <li>
+          <img src="/product_bg.webp" alt="" />
+          <div className="card-information">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>$ 7,777 MXN</p>
+          </div>
+        </li>
+        <li>
+          <img src="/product_bg.webp" alt="" />
+          <div className="card-information">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>$ 7,777 MXN</p>
+          </div>
+        </li>
+        <li>
+          <img src="/product_bg.webp" alt="" />
+          <div className="card-information">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>$ 7,777 MXN</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   )
 }
 

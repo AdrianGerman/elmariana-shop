@@ -1,7 +1,28 @@
+.products {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
 .store-section {
-  height: 100vh;
+  background-color: var(background-primary-color);
+  list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.store-section li {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+
+  & p {
+    text-align: center;
+  }
 }
