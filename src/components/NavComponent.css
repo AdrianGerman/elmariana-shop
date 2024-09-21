@@ -2,6 +2,8 @@ header {
   background-color: var(--background-secondary-color);
   height: 80px;
   width: 100%;
+  position: fixed;
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
   /* border-radius: 0 0 22px 22px; */
 }
 

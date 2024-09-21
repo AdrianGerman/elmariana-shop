@@ -1,12 +1,15 @@
 import "./HomeComponent.css"
+import { useNavigate } from "react-router-dom"
 
 const HomeComponent = () => {
+  const navigate = useNavigate()
+
+  const handleButtonClick = () => {
+    navigate("/store")
+  }
   return (
     <>
       <main>
-        <div className="video-container">
-          <video src="/born.mp4" autoPlay muted loop></video>
-        </div>
         <div className="vista-container">
           <img src="/asi_se_ve.webp" alt="asi se ve parte 1" />
           <img src="/un_gran.webp" alt="un gran parte 2" />
@@ -15,7 +18,9 @@ const HomeComponent = () => {
         <div className="descubrelo-container">
           <video src="/descubrelo-video.mp4" autoPlay muted loop />
           <div className="video-play-button">
-            <button className="descubrelo-button">DESCÚBRELO</button>
+            <button className="descubrelo-button" onClick={handleButtonClick}>
+              DESCÚBRELO
+            </button>
           </div>
         </div>
       </main>

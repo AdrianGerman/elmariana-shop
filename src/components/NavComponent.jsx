@@ -1,4 +1,4 @@
-import "./HeaderMenu.css"
+import "./NavComponent.css"
 
 const HeaderMenu = () => {
   return (

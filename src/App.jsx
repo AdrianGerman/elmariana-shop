@@ -1,15 +1,26 @@
 import "./App.css"
 import FooterComponent from "./components/FooterComponent"
-import HeaderMenu from "./components/HeaderMenu"
+import NavComponent from "./components/NavComponent"
 import HomeComponent from "./components/HomeComponent"
+import HeaderComponent from "./components/HeaderComponent"
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+
+import StoreComponent from "./components/StoreComponent"
 
 function App() {
   return (
-    <>
-      <HeaderMenu />
-      <HomeComponent />
-      <FooterComponent />
-    </>
+    <Router>
+      <>
+        <NavComponent />
+        <HeaderComponent />
+        <Routes>
+          <Route path="/" element={<HomeComponent />} />
+          <Route path="/store" element={<StoreComponent />} />
+        </Routes>
+        <FooterComponent />
+      </>
+    </Router>
   )
 }
 
