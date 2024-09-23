@@ -8,12 +8,24 @@ header {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   height: 100%;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
+  align-items: center;
+}
+
+.icon-menu-navbar {
+  justify-content: start;
+}
+
+.section-logo-navbar {
+  justify-content: center;
+}
+
+.icons-section-navbar {
+  justify-content: end;
 }
 
 .section-logo-navbar {
