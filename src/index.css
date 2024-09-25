@@ -1,11 +1,12 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   --background-primary-color: #dcdae9;
   --background-secondary-color: #d3cce3;
   --text-primary-color: black;
+
+  font-family: "Century Gothic", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.5;
 }
 
 *::before,
@@ -15,4 +16,11 @@
 
 body {
   background-color: var(--background-primary-color);
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./assets/font/centurygothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

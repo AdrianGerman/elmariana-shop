@@ -1,12 +1,11 @@
 import "./App.css"
-import FooterComponent from "./components/FooterComponent"
-import NavComponent from "./components/NavComponent"
-import HomeComponent from "./components/HomeComponent"
-import HeaderComponent from "./components/HeaderComponent"
+import FooterComponent from "./components/Footer/FooterComponent"
+import NavComponent from "./components/Nav/NavComponent"
+import HomeComponent from "./components/Home/HomeComponent"
+import HeaderComponent from "./components/Header/HeaderComponent"
+import StoreComponent from "./components/Store/StoreComponent"
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-
-import StoreComponent from "./components/StoreComponent"
 
 function App() {
   return (

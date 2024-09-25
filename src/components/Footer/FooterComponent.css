@@ -13,9 +13,11 @@ footer {
 
 .text-footer a {
   text-decoration: none;
-  color: inherit;
+  color: #56555a;
+  padding-top: 0;
   &:hover {
-    border-bottom: 1px solid black;
+    text-decoration: underline;
+    color: black;
   }
 }
 

@@ -1,4 +1,4 @@
-import ProductCard from "./ProductCard"
+import ProductCard from "../ProductCard/ProductCard"
 import { products } from "./products"
 import "./StoreComponent.css"
 
