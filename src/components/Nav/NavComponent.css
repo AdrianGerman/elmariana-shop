@@ -3,8 +3,7 @@ header {
   height: 80px;
   width: 100%;
   position: fixed;
-  z-index: 1000; /* Asegura que esté sobre otros elementos */
-  /* border-radius: 0 0 22px 22px; */
+  z-index: 1000;
 }
 
 nav {
@@ -14,6 +13,14 @@ nav {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   align-items: center;
+  z-index: 1000;
+  & a {
+    display: flex;
+  }
+}
+
+svg {
+  cursor: pointer;
 }
 
 .icon-menu-navbar {
@@ -37,6 +44,8 @@ nav {
 }
 
 .image-logo {
+  top: 0;
+
   width: 70px;
   height: 70px;
 }
@@ -44,4 +53,66 @@ nav {
 .icons-section-navbar {
   display: flex;
   gap: 1rem;
+}
+
+/* Estilos básicos del menú */
+.side-menu {
+  position: fixed;
+  top: 80px;
+  left: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: var(--background-secondary-color);
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu-grid {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Estilo del menú cuando está abierto */
+.side-menu.open {
+  left: 0;
+}
+
+/* Estilos del menú (enlaces, etc.) */
+.side-menu ul {
+  border-top: 1px solid rgba(86, 85, 90, 0.1);
+  position: relative;
+  list-style: none;
+  /* padding: 20px; */
+}
+
+.side-menu ul li {
+  & a {
+    padding: 1.1rem 3rem;
+  }
+
+  & :hover {
+    background-color: rgba(86, 85, 90, 0.1);
+  }
+}
+
+.side-menu ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-footer-links {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(86, 85, 90, 0.1);
+  padding: 2rem 3rem;
+  margin-bottom: 80px;
+
+  & a {
+    cursor: pointer;
+  }
 }
