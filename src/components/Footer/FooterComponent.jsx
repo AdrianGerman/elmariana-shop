@@ -1,13 +1,15 @@
 import "./FooterComponent.css"
 
+import { Link } from "react-router-dom"
+
 const FooterComponent = () => {
   return (
     <>
       <footer>
         <div className="text-footer">
-          <a href="">Preguntas Frecuentes</a>
-          <a href="">Términos y Condiciones</a>
-          <a href="">Contacto</a>
+          <Link to="/pages/faqs">Preguntas Frecuentes</Link>
+          <Link to="/pages/terms">Términos y Condiciones</Link>
+          <Link to="/pages/contact">Contacto</Link>
         </div>
         <div className="icons-footer">
           <a href="/">
