@@ -12,7 +12,7 @@ const FooterComponent = () => {
           <Link to="/pages/contact">Contacto</Link>
         </div>
         <div className="icons-footer">
-          <a href="/">
+          <a href="https://www.facebook.com/ElMarianaFB" target="_blank">
             <svg
               width="60"
               height="63"
@@ -34,7 +34,7 @@ const FooterComponent = () => {
               ></path>
             </svg>
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com/elmarianaa/" target="_blank">
             <svg
               width="60"
               height="63"
@@ -64,7 +64,7 @@ const FooterComponent = () => {
               ></path>
             </svg>
           </a>
-          <a href="/">
+          <a href="https://x.com/elmarianaa" target="_blank">
             <svg
               width="60"
               height="63"
@@ -88,15 +88,17 @@ const FooterComponent = () => {
           </a>
         </div>
         <div className="final-footer">
-          <img
-            src="https://pbs.twimg.com/profile_images/1776312145816227840/ISlE225__400x400.jpg"
-            alt="logo heim"
-          />
+          <a href="https://adriangerman.com/" target="_blank">
+            <img
+              src="https://pbs.twimg.com/profile_images/1776312145816227840/ISlE225__400x400.jpg"
+              alt="logo heim"
+            />
+          </a>
           <div>
             <p>
               <b>© 2024,</b> Esta no es una web oficia
             </p>
-            <p>es un clon realizada para fines educativos</p>
+            <p>es una copia para fines de aprendizaje</p>
           </div>
         </div>
       </footer>

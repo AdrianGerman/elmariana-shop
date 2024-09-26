@@ -52,10 +52,10 @@ const NavComponent = () => {
                 <Link to="/">BORN</Link>
               </li>
               <li>
-                <Link to="/contact">Contacto</Link>
+                <Link to="/pages/contact">Contacto</Link>
               </li>
               <li>
-                <Link to="/faq">Preguntas Frecuentes</Link>
+                <Link to="/pages/faqs">Preguntas Frecuentes</Link>
               </li>
             </ul>
             <footer className="menu-footer-links">
