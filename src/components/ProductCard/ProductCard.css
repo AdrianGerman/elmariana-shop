@@ -18,7 +18,6 @@
 
   & div {
     display: flex;
-    /* place-content: center; */
     justify-content: center;
     align-items: center;
   }
@@ -27,10 +26,12 @@
 .bg-image {
   z-index: 0;
   position: relative;
+  max-width: 100%;
 }
 
 .product-img {
   position: absolute;
   z-index: 1;
+  max-width: 100%;
   width: 500px;
 }

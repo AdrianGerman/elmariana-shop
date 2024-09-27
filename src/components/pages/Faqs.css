@@ -2,9 +2,7 @@
   padding: 20px 2rem 20px 2rem;
   max-width: 800px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Century Gothic", sans-serif;
 
   h2 {
     text-align: center;
@@ -65,8 +63,8 @@
   padding-top: 10px;
   color: #555;
   font-size: 16px;
-  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "Century Gothic", sans-serif;
+
   line-height: 1.8;
 
   margin-bottom: 1.5rem;

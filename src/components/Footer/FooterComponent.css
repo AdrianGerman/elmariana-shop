@@ -7,6 +7,8 @@ footer {
 }
 
 .text-footer {
+  margin-top: 2rem;
+
   display: flex;
   gap: 1.5rem;
 }
@@ -40,4 +42,12 @@ footer {
 .final-footer img {
   width: 44px;
   border-radius: 20%;
+}
+
+@media (max-width: 550px) {
+  .text-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }

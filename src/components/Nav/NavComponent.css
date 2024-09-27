@@ -75,6 +75,10 @@ svg {
   align-content: space-between;
   height: 100%;
   overflow-y: auto;
+
+  ul li {
+    list-style: none;
+  }
 }
 
 /* Estilo del menú cuando está abierto */
@@ -115,5 +119,15 @@ svg {
 
   & a {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .none {
+    display: none;
   }
 }
