@@ -1,0 +1,91 @@
+.contact {
+  padding: 20px 2rem 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+.contact-text {
+  text-align: center;
+
+  p {
+    color: #555;
+    margin-bottom: 2rem;
+  }
+}
+
+.info-me-contact {
+  display: flex;
+  gap: 1rem;
+}
+
+.more-info-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* Estilo general del contenedor del formulario */
+.form-contact {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.info-me-contact,
+.more-info-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.info-me-contact input {
+  flex: 1;
+}
+
+/* Campo de teléfono y comentario */
+.more-info-contact input,
+.more-info-contact textarea {
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #666;
+  background-color: #e1deed;
+  color: #333;
+  font-size: 16px;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic", sans-serif;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  font-family: "Century Gothic", sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100px;
+  margin-top: 8px;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
+}

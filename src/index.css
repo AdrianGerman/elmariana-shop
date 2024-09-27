@@ -24,3 +24,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./assets/font/centurygothic_bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
