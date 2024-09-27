@@ -12,6 +12,9 @@
   justify-content: center;
   gap: 2rem;
   padding: 0.5rem;
+  li {
+    cursor: pointer;
+  }
 }
 
 .bg-down {

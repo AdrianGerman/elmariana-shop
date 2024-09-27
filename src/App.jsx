@@ -16,6 +16,7 @@ import {
   Routes,
   useLocation
 } from "react-router-dom"
+import ProductInfo from "./components/ProductInfo/ProductInfo"
 
 function LayoutWrapper({ children }) {
   const location = useLocation() // Obtener la ruta actual
@@ -45,6 +46,9 @@ function App() {
           <Route path="/pages/faqs" element={<Faqs />} />
           <Route path="/pages/terms" element={<Terms />} />
           <Route path="/pages/contact" element={<Contact />} />
+
+          {/* Detail product */}
+          <Route path="/products/:id" element={<ProductInfo />} />
         </Routes>
       </LayoutWrapper>
     </Router>

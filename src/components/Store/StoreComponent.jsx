@@ -9,9 +9,9 @@ const StoreComponent = () => {
         {products.map((product, index) => (
           <ProductCard
             key={index}
+            title={product.title}
             bgImage={product.bgImage}
             imageSrc={product.imageSrc}
-            title={product.title}
             price={product.price}
           />
         ))}
