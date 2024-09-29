@@ -1,19 +1,11 @@
 import "./ProductCard.css"
 import { useNavigate } from "react-router-dom"
 
-const slugify = (title) => {
-  return title
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w-]+/g, "")
-}
-
-const ProductCard = ({ imageSrc, title, price, bgImage }) => {
+const ProductCard = ({ imageSrc, title, price, bgImage, id }) => {
   const navigate = useNavigate()
 
   const handleCardClick = () => {
-    const productSlug = slugify(title)
-    navigate(`/products/${productSlug}`)
+    navigate(`/products/${id}`)
   }
   return (
     <li className="product-card" onClick={handleCardClick}>

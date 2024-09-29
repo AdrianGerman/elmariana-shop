@@ -3,5 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0 4rem 0;
+  margin-bottom: 4rem;
+}
+
+.info-product div {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #d3c9c9;
 }
