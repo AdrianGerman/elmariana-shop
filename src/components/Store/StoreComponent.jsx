@@ -13,6 +13,7 @@ const StoreComponent = () => {
             title={product.title}
             bgImage={product.bgImage}
             imageSrc={product.imageSrc}
+            frontImageSrc={product.frontImageSrc}
             price={product.price}
           />
         ))}

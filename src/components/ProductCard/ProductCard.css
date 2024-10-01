@@ -5,33 +5,64 @@
   padding: 1rem;
   justify-content: center;
   align-items: center;
+}
 
-  & p {
-    text-align: center;
-  }
+.product-card p {
+  text-align: center;
+}
 
-  & b {
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+.product-card b {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-  & div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.product-card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .bg-image {
-  z-index: 0;
   position: relative;
+  z-index: 0;
   max-width: 100%;
 }
 
 .product-img {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   max-width: 100%;
   width: 500px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.back-image {
+  opacity: 1;
+  z-index: 1;
+}
+
+.front-image {
+  opacity: 0;
+  z-index: 2;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.product-card:hover .front-image {
+  opacity: 1;
+}
+
+.product-card:hover .back-image {
+  opacity: 0;
 }
