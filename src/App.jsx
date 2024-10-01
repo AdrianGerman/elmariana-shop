@@ -18,6 +18,8 @@ import {
 } from "react-router-dom"
 import ProductInfo from "./components/ProductInfo/ProductInfo"
 
+import ScrollToTop from "./components/ScrollToTop"
+
 function LayoutWrapper({ children }) {
   const location = useLocation() // Obtener la ruta actual
 
@@ -38,6 +40,7 @@ function LayoutWrapper({ children }) {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <LayoutWrapper>
         <Routes>
           <Route path="/" element={<HomeComponent />} />
